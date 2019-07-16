@@ -38,8 +38,9 @@ function showIt2() {
 jQuery.ajax({
     type: "GET",
     url: 'http://ec2-18-237-86-164.us-west-2.compute.amazonaws.com:3000/API/rates',
+    //url:'http://localhost:3000/API/rates',
     rejectUnauthorized: false,
-    requestCert: true,
+    requestCert: true, 
     agent: false,
     success: function(res) { 
         var strVES = res.vesDashRate;
@@ -70,7 +71,7 @@ jQuery.ajax({
             var bsCalculation = ($("#dashRate").val() * strVES).toFixed(2);
             $("#bsRate").val(bsCalculation);
         });
-        setTimeout("showIt2()", 20000); // after 5 secs
+        setTimeout("showIt2()", 180000); // after 3 mins
         $("#bsRate").val(strVES);
         $("#loaderSpinner").hide();
         $("#apiDocs").show();
