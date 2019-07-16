@@ -37,7 +37,7 @@ function showIt2() {
 
 jQuery.ajax({
     type: "GET",
-    url: 'http://localhost:3000/API/rates',
+    url: 'http://ec2-18-237-86-164.us-west-2.compute.amazonaws.com:3000/API/rates',
     rejectUnauthorized: false,
     requestCert: true,
     agent: false,
