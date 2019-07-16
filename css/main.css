@@ -1,0 +1,49 @@
+body{
+background-image: linear-gradient(to bottom, #283d81, #29509a, #2663b2, #1d78cb, #008de4);
+width:100%;
+height:100%;
+}
+.logoRow{
+    margin-top:3%; 
+    margin-bottom: 5%;
+}
+.divSpinner{
+    text-align: center;
+}
+#apiError{
+    display: none;
+}
+#mainBox{
+    display: none;
+}
+.dashInput{
+    margin-bottom:3%
+}
+.apiLink{
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+}
+.blurElement{
+    filter: blur(5px);
+    pointer-events: none;
+    opacity: 0.5;
+}
+#apiReload{
+    margin-top: 20%;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+.apiErrorText {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: large
+}
+.apiReloadText {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: large
+}
+
+
