@@ -70,7 +70,7 @@ jQuery.ajax({
             var bsCalculation = ($("#dashRate").val() * strVES).toFixed(2);
             $("#bsRate").val(bsCalculation);
         });
-        setTimeout("showIt2()", 5000); // after 5 secs
+        setTimeout("showIt2()", 20000); // after 5 secs
         $("#bsRate").val(strVES);
         $("#loaderSpinner").hide();
         $("#apiDocs").show();
