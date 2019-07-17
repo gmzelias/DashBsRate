@@ -46,6 +46,11 @@ jQuery.ajax({
         var strVES = res.vesDashRate;
 
         //************************************** 1MM, 10MM, 100MM***********************************//START
+        if(strVES.length === 9){
+            var mainBsRate = strVES.replace(".", ",");
+            mainBsRate = mainBsRate.slice(0,3) + "." + mainBsRate.slice(3);
+            $("#mainDashRate").text(mainBsRate + ' Bs');
+        } 
         if(strVES.length === 10){
             var mainBsRate = strVES.replace(".", ",");
             mainBsRate = mainBsRate.slice(0,1) + "." + mainBsRate.slice(1,4)  + "." + mainBsRate.slice(4);
