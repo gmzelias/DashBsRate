@@ -4,6 +4,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" href="css/main.css">
 <script src="js/main.js"></script>
+<title>Dash Interactive Calculator</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
 
 <!------ Include the above in your HEAD tag ---------->
@@ -11,39 +13,39 @@
 <div class="container">
       <div class="row logoRow">
             <div  class="col-3 offset-9">
-                  <img src="img/DashVert.png" alt="Dash Help Support Center" style="width: 100%">
+                  <a target="_blank" href="https://www.dashhelpme.io"><img src="img/DashVert.png" alt="Dash Help Support Center"  style="width: 100%"></a>
             </div>
       </div>
     	<div class="row">
-		    <div  class="col-6 offset-3">
+		    <div  class="col-lg-6 offset-lg-3">
                     <div class="divSpinner"> <div class="spinner-grow text-primary" id="loaderSpinner" role="status"></div></div>
                     <div id="apiError" class="alert alert-danger" role="alert">
                        <p class="apiErrorText">Unexpected error <a href="" onClick="window.location.reload()" class="alert-link">click here</a> to try again.</p> 
                     </div>
-                    <div id="apiReload" class="alert alert-warning col-8 offset-2" role="alert">
+                    <div id="apiReload" class="alert alert-warning col-md-8 offset-md-2" role="alert">
                         <p  class="apiReloadText">Rate changed, <a href="" onClick="window.location.reload()" class="alert-link">click here</a> to reload.</p> 
                     </div>
                     <div class="card text-center" id="mainBox">
                             <div class="card-header">
-                             <h4> Dash Rate to Bs </h4>
+                             <h4> Dash Interactive Calculator </h4>
                             </div>
                             <div class="card-body">
                               <p class="card-text">1 Dash equals</p>
                               <h5 class="card-title" id="mainDashRate"></h5>
                               <div class="row" style="margin-bottom:3%">
-                                    <div  class="col-4 offset-3">
+                                    <div  class="col-md-4 offset-md-3">
                                     <input id='dashRate' class="form-control" type='number' min="0" onkeypress='validate(event)' type="text" placeholder="1">
                                     </div>
                                     <h5 style="margin-top: 3px">Dash</h5>
                               </div>
                               <div class="row" style="margin-bottom:3%">
-                                    <div  class="col-4 offset-3">
+                                    <div  class="col-md-4 offset-md-3">
                                     <input id='bsRate' class="form-control" type="number" min="0" placeholder="1">
                                     </div>
                                     <h5 style="margin-top: 5px">Bolivares</h5>
                               </div>
                               <div class="row" style="margin-bottom:3%">
-                                    <div  class="col-4 offset-3">
+                                    <div  class="col-md-4 offset-md-3">
                                     <input id='usdRate' class="form-control" type="number" min="0" placeholder="1">
                                     </div>
                                     <h5 style="margin-top: 5px">USD</h5>
@@ -56,7 +58,7 @@
             </div>
         </div>
         <div id="apiDocs" class="row" style="display: none">
-            <div  class="col-6 offset-3 apiLink">
+            <div  class="col-md-6 offset-md-3 apiLink">
                   <p>API documentation can be found <a style="color: #283d81" target="_blank" href="https://documenter.getpostman.com/view/520445/SVSKMpAo" class="alert-link">here</a></p>
             </div>
        </div>
